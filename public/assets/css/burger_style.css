@@ -2,14 +2,16 @@
 .jumbotron {
     background-color: transparent;
     text-align: center;
-    height: 200px;
+    height: 300px;
 
 
 }
 
 .lead {
-
+    color: orangered;
     text-align: center;
+    font-family: 'Homemade Apple', cursive;
+
 }
 
 body{
@@ -22,8 +24,25 @@ body{
 }
 
 img{
-    width: 200px;
+    width: 250px;
 }
 
 
+.panel-panel default{
 
+    border-radius: 55px;
+
+}
+
+h2{
+
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+
+.enter{
+    text-align: center;
+    color: #333333;
+    font-family: 'Glegoo', serif;
+}
