@@ -21,10 +21,10 @@ function objToSql(ob) {
     var arr = [];
 
     for (var key in ob) {
-        if (Object.hasOwnProperty.call(ob, key)) {
+
             arr.push(key + "=" + ob[key]);
-        }
-    }
+        };
+
 
     return arr.toString();
 }
@@ -35,7 +35,7 @@ var orm = {
 
     all: function (tableInput, cb){
 
-        var queryString = "SELECT * FROM " + tableInput + ";";
+        var queryString = "SELECT * FROM " + tableInput;
         connection.query(queryString, function (err, result){
 
             if(err){
@@ -58,7 +58,7 @@ var orm = {
         queryString += printQuestionMarks(vals.length);
         queryString += ") ";
 
-        console.log(queryString);
+        // console.log(queryString);
 
         connection.query(queryString, vals, function(err, result) {
             if (err) throw err;
